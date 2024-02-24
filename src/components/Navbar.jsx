@@ -13,11 +13,11 @@ function navbar() {
 								</svg>
         </div>
 <div>
-    <div className='link flex gap-10 '>
-  {["Services", "Our work", "About us", "Insights", "Contact"].map((item, index) => (
-    <a key={index} className={`text-md font-semibold ${index == 4 ? "ml-30" : ""}`}>{item}</a>
-  ))}
-   </div>
+<div className='link flex gap-10'>
+    {["Services", "Our work", "About us", "Insights", "Contact"].map((item, index) => (
+      <a key={index} className={`text-md font-semibold ${index === 4 ? "ml-30" : ""}`}>{item}</a>
+    ))}
+  </div>
 </div>
     </div>
   )
